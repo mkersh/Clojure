@@ -18,3 +18,7 @@ sinewave/dev-target/*
 sinewave/log
 .clj-kondo/*
 sinewave/target/*
+sinewave/.clj-kondo/*
+.gitignore
+sinewave/.calva/output-window/output.calva-repl
+sinewave/.lsp/sqlite.5.db
