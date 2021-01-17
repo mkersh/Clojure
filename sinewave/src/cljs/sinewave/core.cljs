@@ -10,3 +10,5 @@
 
 (defn render []
   (reagent/render [greeting] (js/document.getElementById "app")))
+
+(.log js/console "hello clojurescript")

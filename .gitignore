@@ -14,3 +14,7 @@ pom.xml.asc
 .cpcache/
 .DS_Store
 .lsp/sqlite.5.db
+sinewave/dev-target/*
+sinewave/log
+.clj-kondo/*
+sinewave/target/*
