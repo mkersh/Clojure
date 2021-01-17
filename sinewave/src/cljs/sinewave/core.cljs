@@ -58,15 +58,20 @@
   (set! (.-fillStyle ctx) colour)
   (.fillRect ctx x y 2 2))
 
-(defn test3 [n]
+(defn test3 [n color offset]
   (-> sine-wave
       (.take n)
       (.subscribe (fn [{:keys [x y]}]
 
-                    (fill-rect x y "orange")))))
+                    ;;(fill-rect x y color)
+                    (fill-rect x (+ y offset) color)
+                    
+                    ))))
 
 
-(test3 600)
+(test3 650 "red" 0)
+(test3 650 "blue" 50)
+(test3 650 "orange" 100)
 
 
 (comment
