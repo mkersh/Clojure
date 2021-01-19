@@ -1,5 +1,7 @@
 (ns sinewave.core
-  (:require [reagent.core :as reagent :refer [atom]]))
+  (:require [reagent.core :as reagent :refer [atom]]
+  [reagentdemo.intro :as demo]
+  ))
 
 (enable-console-print!)
 
@@ -15,6 +17,7 @@
 (defn render []
   (reagent/render [greeting] (js/document.getElementById "app"))
   (reagent/render [setBody] (js/document.getElementById "app2"))
+  (reagent/render [demo/main] (js/document.getElementById "app3"))
   )
 
 (.log js/console "hello clojurescript")
@@ -72,14 +75,21 @@
 (test3 650 "red" 0)
 (test3 650 "blue" 50)
 (test3 650 "orange" 100)
+(test3 650 "pink" 150)
+(test3 650 "black" 200)
 
 
 (comment
 
 ;; [1] After starting the REPL
 ;;     Instructions - https://github.com/mkersh/Clojure/blob/main/sinewave/README.md
+
+;; From a termine start the repl
+;; lein repl
+;; lein cljsbuild once
 (go) 
 (cljs-repl)
+(reagentdemo.intro/essential-api)
 
 ;; [2] Then loan browser - http://localhost:10555/
 

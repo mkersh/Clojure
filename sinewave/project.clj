@@ -42,7 +42,7 @@
 
   :cljsbuild {:builds
               [{:id "app"
-                :source-paths ["src/cljs" "src/cljc" "dev"]
+                :source-paths ["src/clj" "src/cljs" "src/cljc" "dev"]
 
                 :figwheel {:on-jsload "sinewave.system/reset"}
 
@@ -59,7 +59,7 @@
                            :optimizations :none}}
 
                {:id "min"
-                :source-paths ["src/cljs" "src/cljc"]
+                :source-paths ["src/clj" "src/cljs" "src/cljc"]
                 :jar true
                 :compiler {:main sinewave.system
                            :output-to "resources/public/js/compiled/sinewave.js"
