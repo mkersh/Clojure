@@ -1,0 +1,96 @@
+.board {
+    position:absolute;
+    background-color: green;
+    height: 80vh;
+    width: 80vh;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    margin: 25px 50px 75px 10px;
+    padding: 20px;
+}
+
+.pots {
+    position:absolute;
+    display: inline-block;
+    right:30px;
+}
+.card {
+    display: inline-block;
+    background-color: gray;
+    margin: 20px 20px 20px 20px;
+}
+.cardsAll {
+    text-align: center;
+    background-color: yellow;
+    color: red;
+    /*height: 200px;*/
+}
+
+.cardsYour {
+    position:absolute;
+    width:95%;
+    text-align: center;
+    background-color: cyan;
+}
+
+.tokens {
+
+}
+
+.actions-list {
+    margin-bottom: 10px;
+}
+
+.action {
+    /* display:inline-block;*/
+    color:#444;
+    border:1px solid #CCC;
+    background:#DDD;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    vertical-align:middle;
+    max-width: 100px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.raise {
+    width: 50px;
+}
+
+.action:active {
+    color:red;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
+
+.topLeft {
+    position:absolute;
+    left:10px;
+    top:10px;
+
+} 
+.topRight {
+    position:absolute;
+    right:10px;
+    top:10px;
+
+} 
+
+.bottomLeft {
+    position:absolute;
+    left:10px;
+    bottom:10px;
+} 
+.bottomRight  {
+    position:absolute;
+    right:10px;
+    bottom:10px;
+}
+
