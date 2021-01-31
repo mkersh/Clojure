@@ -24,3 +24,4 @@ sinewave/.calva/output-window/output.calva-repl
 sinewave/.lsp/sqlite.5.db
 */.clj-kondo/*
 */resources/public/cljs-out/*
+traceclient/src/http/ENV.clj
